@@ -41,3 +41,28 @@ Mechanical stress: The gripper was lacking software limits, causing it to attemp
 Power limitation: The attempt to power mulitple servos using just the arduinoes 5V output was insufficient. When more than one servo moved at a time the current draw caused volate drops and unstable behavior. 
 
 
+PHASE 2: Version 2 (The Refined System)
+The second iteration of DARKAR focused on overcoming the hardware and software bottlenecks identified in V1. The goal was to move from "concept" to a "functional tool", capable of more precise and repeatable movement. 
+
+Key Engineering Improvements:
+To address the challenges show in V1 the following upgrades were implemented
+
+Mechanical Rigidity and Remixed gripper: The 3D prints were entirely redesigned with using the cross servo horn and tighter tolerances to eliminate joint "slop". See Figure 5. Made a new gripper with a different method, better but still not perfect. 
+
+Dedicated 6V Power supply: To prevent the voltage drops seen in V1, a dedicated 4 x AA battery pack was introduced to power the servos directly.
+
+Software Architecture:
+
+
+
+
+
+
+
+
+
+Figure 5: New servo mount 
+![CF2CFB1D-0BA6-4E16-8E99-297F035E87A7_1_105_c](https://github.com/user-attachments/assets/c2f4f2a3-db14-4c28-9c1e-bedc977868dc)
+
+
+
