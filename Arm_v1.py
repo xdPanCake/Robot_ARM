@@ -10,8 +10,8 @@ Pin_hand = 6
 Pin_gripper = 3
 
 current_pos1 = 90
-current_pos2 = 180
-current_pos3 = 0
+current_pos2 = 90
+current_pos3 = 90
 current_pos4 = 90
 
 
@@ -64,7 +64,7 @@ finally:
 
 """
 
-def moveto(target1,target2,target3,target4,speed=0.01):
+def moveto(target1,target2,target3,target4,speed=0.02):
     global current_pos1, current_pos2, current_pos3, current_pos4
 
     dist1 = abs(target1 - current_pos1)
