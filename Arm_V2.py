@@ -80,7 +80,7 @@ def moveto(target1,target2,target3,target4,speed):
 
 #for move in dance_moves:
 #    moveto(move[0], move[1], 0.02)
-d
+
 #    time.sleep(1)
 
 #cords = [[90,120,100,150], [60,80,0,0], [90,120,100,150], [180,70,30,20], [90,120,100,150],[90,120,100,150], [60,80,0,0], [90,120,100,150], [180,70,30,20], [90,120,100,150]]
@@ -89,13 +89,13 @@ def follow_path(cords):
     for cord in cords:
         M_shouler, M_elbow, M_hand, M_gripper = cord[0], cord[1], cord[2], cord[3]
 
-        moveto(current_pos1, M_elbow, current_pos3, current_pos4, 0.01)      # Just Elbow
-        moveto(M_shouler, current_pos2, current_pos3, current_pos4, 0.01)    # Just Shoulder
+        moveto(M_shouler, M_elbow, M_hand, M_gripper, 0.01)      # Just Elbow
+   #     moveto(M_shouler, current_pos2, current_pos3, current_pos4, 0.01)    # Just Shoulder
 
-        moveto(current_pos1, current_pos2, M_hand, current_pos4, 0.01)       # Just Hand
+   #     moveto(current_pos1, current_pos2, M_hand, current_pos4, 0.01)       # Just Hand
         
         
-        moveto(current_pos1, current_pos2, current_pos3, M_gripper, 0.01)    # Just Gripper
+  #      moveto(current_pos1, current_pos2, current_pos3, M_gripper, 0.01)    # Just Gripper
 
         time.sleep(0.5)
 
